@@ -6,7 +6,6 @@ pipeline{
                 sh 'node --version'
                 sh 'npm --version'
                 sh 'npm install'
-                sh 'echo $USER'
             }
         }
         stage("Deploy"){
