@@ -6,6 +6,7 @@ pipeline{
                 sh 'node --version'
                 sh 'npm --version'
                 sh 'npm install'
+                sh 'pwd'
             }
         }
         stage("Deploy"){
