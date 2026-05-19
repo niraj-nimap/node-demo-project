@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-            sh 'npm start > output.log 2>&1 &'
+            sh 'nohup npm start > output.log 2>&1 &'
             }
         }
     }
